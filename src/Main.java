@@ -1,5 +1,20 @@
+import java.util.Scanner;
+import  java.lang.Math;
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Scanner scan = new Scanner(System.in);
+
+        int x;
+        boolean sqt = false;
+        System.out.println("Enter a number");
+        x = scan.nextInt();
+
+        int root = (int)Math.sqrt(x);
+
+        if(root * root == x){
+            sqt = true;
+        }
+        System.out.println(sqt);
+
     }
 }
